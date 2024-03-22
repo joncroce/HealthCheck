@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.Server", "HealthCheck.Server\HealthCheck.Server.csproj", "{D2594D1C-2CE7-4455-86F3-AC799044216D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "healthcheck.client", "healthcheck.client\healthcheck.client.esproj", "{061894E2-AB73-4A9F-A436-F335382C6033}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2594D1C-2CE7-4455-86F3-AC799044216D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2594D1C-2CE7-4455-86F3-AC799044216D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2594D1C-2CE7-4455-86F3-AC799044216D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2594D1C-2CE7-4455-86F3-AC799044216D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{061894E2-AB73-4A9F-A436-F335382C6033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061894E2-AB73-4A9F-A436-F335382C6033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061894E2-AB73-4A9F-A436-F335382C6033}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{061894E2-AB73-4A9F-A436-F335382C6033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061894E2-AB73-4A9F-A436-F335382C6033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{061894E2-AB73-4A9F-A436-F335382C6033}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7958F1E-DCF5-406C-8A0B-69716BD628BA}
+	EndGlobalSection
+EndGlobal
