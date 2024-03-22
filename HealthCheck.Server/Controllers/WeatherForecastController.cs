@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HealthCheck.Server.Controllers;
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
