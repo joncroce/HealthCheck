@@ -24,8 +24,9 @@ yarn-error.log
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
+!.vscode/launch.example.json
 !.vscode/extensions.json
+!.vscode/README.md
 .history/*
 
 # Miscellaneous

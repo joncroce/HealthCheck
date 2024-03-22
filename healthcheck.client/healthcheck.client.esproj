@@ -7,4 +7,8 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\healthcheck.client\</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include=".vscode\launch.example.json" />
+    <None Include=".vscode\README.md" />
+  </ItemGroup>
 </Project>
