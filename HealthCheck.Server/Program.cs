@@ -9,6 +9,16 @@ builder.Services.AddHealthChecks()
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+    options.AddPolicy(name: "AngularPolicy",
+        cfg =>
+        {
+            string allowedCorsOrigins = builder.Configuration["AllowedCORS"]
+                ?? throw new InvalidOperationException("Missing necessary configuration: AllowedCORS");
+            cfg.AllowAnyHeader();
+            cfg.AllowAnyMethod();
+            cfg.WithOrigins(allowedCorsOrigins);
+        }));
 
 var app = builder.Build();
 app.UseDefaultFiles();
@@ -20,6 +30,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseCors("AngularPolicy");
 app.UseHealthChecks(new PathString("/api/health"), new CustomHealthCheckOptions());
 app.MapControllers();
 app.MapMethods("/api/heartbeat", ["HEAD"], () => Results.Ok());
